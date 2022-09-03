@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .calc {
+    width: 250px;
+    height: 300px;
+    background-color: #2C3A4D;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.445);
+}
+
+.container .calc .result {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 0 10px;
+}
+
+.container .calc .result input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.container .calc table {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+}
+
+.container .calc table tr td input {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+}
+
+.container .calc table tr td input:hover {
+    box-shadow: 0 0 5px black;
+}
+
+.container .calc input[value="C"] {
+    background-color: rgb(206, 1, 1);
+    color: white;
+}
